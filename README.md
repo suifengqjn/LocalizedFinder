@@ -1,0 +1,2 @@
+# LocalizedFinder
+找出工程中所有的NSLocalizedString文案，与已有的翻译文案做比较，找出未翻译的文案
