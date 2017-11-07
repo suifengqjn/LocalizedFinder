@@ -6,20 +6,29 @@
 //  Copyright © 2017年 SF. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 
-class ViewController: UIViewController {
+class ViewController: NSViewController {
 
+    @IBOutlet weak var dragView: DragView!
+    @IBOutlet weak var projectPath: NSTextField!
+    @IBOutlet weak var parsingIndicator: NSProgressIndicator!
+    @IBOutlet weak var findBtn: NSButton!
+    @IBOutlet weak var findingStatelabel: NSTextField!
+    @IBOutlet weak var resultPath: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // 开始查找
+    @IBAction func searchMethodAction(_ sender: Any) {
+        parsingIndicator.startAnimation(nil)
     }
-
-
+    
+    
 }
 
